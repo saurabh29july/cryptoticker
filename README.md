@@ -2,13 +2,17 @@
 
 Firefox extension to track the prices of **Top 10 cryptocurrencies** providing the details such as Price in USD and percentage change in last 24 hours. 
 
-#### Install
 
+Download from Firefox Add-On Store [here](https://addons.mozilla.org/en-US/firefox/addon/cryptoticker/)
+
+#### Development Install
+
+0. Clone this repo or download zip locally
 1. Type in `about:debugging` in the address bar. 
 2. Click on `Load Temporary Add-ons`
 3. Choose `cryptoticker-extension/metadata.json` file to upload
 
-All done! You should see the BTC icon in toolbar
+All done! You should see the icon in toolbar
 
 
 #### Development Tech
