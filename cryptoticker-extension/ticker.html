@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>CryptoTicker</title>
+      
+      <link rel="stylesheet" type="text/css" media="screen" href="files/css/bootstrap.min.css" />
+      
+      <style type="text/css">
+         html,body{
+            width: 400px;
+            overflow-x: hidden;
+            overflow-y: initial;
+            border-top: 0px;
+         }
+      </style>
+
+   </head>
+
+   <script src="files/js/bootstrap.bundle.min.js" async defer rel=preload as=script></script>
+   <script src="files/js/ticker.js" async defer rel=preload as=script></script>
+   
+   <body>
+      <!-- Header -->
+      <div class="container" style="margin: 5px;">
+         <div class="row">
+            <div class="col" align="center">
+               <h6 class="text-info">CryptoTicker</h6>
+            </div>
+         </div>
+      </div>
+
+      <!-- Top 10 Cryptocurrency Table -->
+      <div class="container" style="margin-left: 5px;">
+         <div class="row">
+            <table class="table table-sm">
+               <thead>
+                  <tr>
+                     <th scope="col">#</th>
+                     <th scope="col">Name</th>
+                     <th scope="col">Price</th>
+                     <th scope="col">Change</th>
+                  </tr>
+               </thead>
+               <tbody id="cryptoTable">
+                  <!-- ticker.js appends this -->
+               </tbody>
+            </table>
+         </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="container">
+         <div class="row" style="margin-bottom: 5px;">
+            <div class="col">
+               <small>♥ of crypto! Source on <a href="#">Github</a></small>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
