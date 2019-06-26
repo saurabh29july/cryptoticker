@@ -30,4 +30,4 @@ CoinmarketCap Public API [here](https://coinmarketcap.com/api/).
 
 ##### License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/iSumitBanik/Cryptocurrency-Price-Tracker-Chrome-Extension/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/saurabh29july/cryptoticker/edit/master/LICENSE) file for details.
