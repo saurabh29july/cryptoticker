@@ -14,19 +14,29 @@ coinCapHTTPRequest.onreadystatechange = function()
 
             var newRow = document.createElement("tr");
 
-            row = '<td>' + info[i].rank + '</td>';
-            row = row + '<td>' + info[i].name + '</td>';
-            row = row + '<td>' + parseFloat(info[i].price_usd).toFixed(2); + '</td>';
+            var rankTD = document.createElement("td");
+            rankTD.textContent = info[i].rank;
+            newRow.appendChild(rankTD);
+                        
+            var nameTD = document.createElement("td");
+            nameTD.textContent = info[i].name;
+            newRow.appendChild(nameTD);
             
+            var priceTD = document.createElement("td");
+            priceTD.textContent = parseFloat(info[i].price_usd).toFixed(2);
+            newRow.appendChild(priceTD);
+            
+            var changeTD = document.createElement("td");
             var change = info[i].percent_change_24h;
             if(change < 0){
-                row = row + '<td style="color:red;">' + change + '%</td>';    
+                changeTD.style = "color:red;";
             }else{
-                row = row + '<td style="color:#4CAF50;">' + change + '%</td>';
+                changeTD.style = "color:#4CAF50;";
             }
+            changeTD.textContent = change + '%';
+            newRow.appendChild(changeTD);
             
-            newRow.innerHTML = row;
-            document.getElementById('cryptoTable').append(newRow);
+            document.getElementById('cryptoTable').appendChild(newRow);
         
         }
     }
